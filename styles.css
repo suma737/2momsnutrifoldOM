@@ -120,20 +120,15 @@ ul { margin: 0; padding-left: 1.2rem; }
 }
 
 .logo {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 800;
   color: #004d26; /* Dark green color */
   margin: 0;
   letter-spacing: -0.5px;
 }
 
-.tagline {
-  font-size: 0.9rem;
-  color: var(--text-light);
-  margin: 0;
-  font-style: italic;
-  letter-spacing: 0.5px;
-}
+.logo span { color: #ff8c00; }
+
 
 /* Navigation styles */
 .main-nav {
@@ -474,7 +469,6 @@ h2 {
   text-decoration: none;
   font-weight: 500;
   font-size: 0.95rem;
-  text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: var(--transition);
   position: relative;
@@ -492,14 +486,22 @@ h2 {
   transition: var(--transition);
 }
 
-.nav-links a:hover,
-.nav-links a.active {
-  color: var(--primary-color);
+.nav-links a:hover {
+  color: var(--primary-color); /* Light green on hover */
 }
 
-.nav-links a:hover:before,
+.nav-links a.active {
+  color: var(--primary-color); /* Dark green when active/clicked - same as logo */
+}
+
+.nav-links a:hover:before {
+  width: 100%;
+  background: var(--primary-color); /* Light green underline on hover */
+}
+
 .nav-links a.active:before {
   width: 100%;
+  background: darkgreen /* Dark green underline when active - same as logo */
 }
 
 /* Hamburger menu styles */
@@ -540,9 +542,6 @@ h2 {
     padding: 0 1rem;
   }
   
-  .logo {
-    font-size: 1.6rem;
-  }
   
   /* Hide hamburger button */
   .hamburger {
@@ -595,7 +594,6 @@ h2 {
     white-space: nowrap;
     padding: 0 1.5rem;
     font-size: 0.95rem;
-    text-transform: uppercase;
     letter-spacing: 0.5px;
     color: var(--dark-color);
     text-decoration: none;
@@ -672,14 +670,19 @@ body.menu-open {
   gap: 0.2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
+  gap: 0.25rem;
 }
-.logo {
-  font-size: 2rem;
-  margin: 0;
+
+.logo-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-.logo span { color: #ff8c00; }
+
+
 .tagline {
   margin: 0;
   font-weight: 500;
@@ -687,6 +690,7 @@ body.menu-open {
   font-size: 0.75rem;
   font-style: italic;
   font-weight: bold;
+  text-align: left;
   margin-top: -0.7rem; /* Reduce space between Krave and tagline */
 }
 .partner {
@@ -1138,9 +1142,7 @@ body::before {
   box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 
-.header-left {
-  gap: 0.25rem;
-}
+
 
 /* Know Us Page Styles */
 .know-us {
