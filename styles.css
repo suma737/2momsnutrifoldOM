@@ -122,12 +122,8 @@ ul { margin: 0; padding-left: 1.2rem; }
 .logo {
   font-size: 1.8rem;
   font-weight: 800;
-  color: var(--dark-color);
+  color: #004d26; /* Dark green color */
   margin: 0;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   letter-spacing: -0.5px;
 }
 
@@ -690,6 +686,7 @@ body.menu-open {
   color: #ff8c00; /* orange color */
   font-size: 0.75rem;
   font-style: italic;
+  font-weight: bold;
   margin-top: -0.7rem; /* Reduce space between Krave and tagline */
 }
 .partner {
