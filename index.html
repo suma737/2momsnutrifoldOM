@@ -3,26 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>2Moms Nutrifold | A Mother's Love in Every Bite</title>
+  <meta name="description" content="Krave: A Mother's Love in Every Bite - Nutritious, high-protein rotis for health-conscious families.">
+  <meta name="keywords" content="Krave, high protein roti, healthy roti, nutritious food, organic roti, Indian bread, healthy eating">
+  <meta name="author" content="Krave Foods">
+  <meta property="og:title" content="Krave | A Mother's Love in Every Bite">
+  <meta property="og:description" content="Nutritious, high-protein rotis for health-conscious families.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Krave | A Mother's Love in Every Bite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <!-- Site Styles -->
   <link rel="stylesheet" href="styles.css" />
+  <script src="js/load-components.js" defer></script>
+  <script src="js/parallax.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="header-left">
-        <h1 class="logo">2Moms <span>Nutrifold</span></h1>
-        <p class="partner">In partnership with <strong>Organic Mandya</strong></p>
-      </div>
-      <img src="img/OMLogo.png" alt="Organic Mandya Logo" class="partner-logo" />
-    </div>
-  </header>
-
+  <!-- Header and Navigation will be loaded here by load-components.js -->
+  
   <main>
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero hero-with-bg">
+      <div class="hero-overlay"></div>
       <div class="container">
-        <h2>2Moms Nutrifold: A Mother's Love in Every Bite</h2>
-        <p>The inspiring story of two tech moms who created a revolutionary nutritious roti to solve the challenges of feeding their children and other busy families.</p>
+        <div class="hero-content">
+          <h2>Krave: A Mother's Love in Every Bite</h2>
+          <p>The inspiring story of two tech moms who created a revolutionary nutritious tortilla/roti to solve the challenges of feeding their children and other busy families.</p>
+        </div>
       </div>
     </section>
 
@@ -34,7 +44,7 @@
           <p>In the heart of San Francisco Silicon Valley, two tech moms, Suma and Priyanka, faced the same daily struggle that millions of parents know all too well. Despite their brilliant careers, they felt like they were failing the most important project of their lives &mdash; providing their children with the nutrition they needed.</p>
         </div>
         <div class="story-img">
-          <img src="img/RotiWithGhee.jpg" alt="Nutrifold roti with ghee on plate" />
+          <img src="img/RotiWithGhee.jpg" alt="Krave high protein tortilla on plate" />
         </div>
       </div>
     </section>
@@ -192,7 +202,7 @@
     <section class="community">
       <div class="container">
         <h2>From Two Moms to Every Mom</h2>
-        <p>What started in one kitchen with two concerned mothers has grown into a movement. 2Moms Nutrifold represents every parent who has ever felt torn between providing the best nutrition and managing the demands of modern life.</p>
+        <p>What started in one kitchen with two concerned mothers has grown into a movement. Krave represents every parent who has ever felt torn between providing the best nutrition and managing the demands of modern life.</p>
       </div>
     </section>
 
@@ -200,26 +210,16 @@
     <section class="conclusion">
       <div class="container conclusion-grid">
         <div class="conclusion-text">
-          <h2>2Moms Nutrifold: A Mother's Love in Every Bite</h2>
-          <p>2Moms Nutrifold's story demonstrates how a personal crisis can spark innovation and lead to the creation of a product that addresses a widespread need. By combining their technical expertise and maternal instincts, Suma and Priyanka have built a movement that empowers parents to provide their children with the love, care, and nutrition they deserve, one delicious and nutritious bite at a time.</p>
+          <h2>Krave: A Mother's Love in Every Bite</h2>
+          <p>Krave's story demonstrates how a personal crisis can spark innovation and lead to the creation of a product that addresses a widespread need. By combining their technical expertise and maternal instincts, Suma and Priyanka have built a movement that empowers parents to provide their children with the love, care, and nutrition they deserve, one delicious and nutritious bite at a time.</p>
         </div>
         <div class="conclusion-img">
-          <img src="img/SumaPriyanka1.jpg" alt="Suma and Priyanka showcasing Nutrifold" />
+          <img src="img/SumaPriyanka1.jpg" alt="Suma and Priyanka showcasing Krave" />
         </div>
       </div>
     </section>
 
   </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> 2Moms Nutrifold &middot; In partnership with Organic Mandya</p>
-    </div>
-  </footer>
-
-  <script>
-    // update footer year automatically
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <!-- Footer is loaded by load-components.js -->
 </body>
 </html>
