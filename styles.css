@@ -1365,6 +1365,18 @@ body::before {
   box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
 
+.kids-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.kids-image {
+  width: calc(50% - 10px) !important;
+  max-width: 250px;
+}
+
 @media (max-width: 768px) {
   .profile-container,
   .profile-container.reverse {
