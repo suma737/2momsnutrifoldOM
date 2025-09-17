@@ -247,14 +247,27 @@ h2 {
 }
 
 .product-image {
-  height: 200px;
-  overflow: hidden;
+  height: auto;
+  padding: 15px;
+  background-color: #fff;
+  text-align: center;
+  overflow: visible;
 }
 
 .product-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/* Specific style for KravePackage image */
+img[src*="KravePackage"] {
+  max-height: none !important;
+  height: auto !important;
+  width: 80% !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .product-card h3 {
